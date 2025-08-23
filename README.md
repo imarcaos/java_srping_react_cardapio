@@ -31,7 +31,20 @@ Iniciar um projeto no site [Spring Initializr](https://start.spring.io/).
   - Agora precisamos conectar com a nossa BD, mas para isso precisamos adicionar mais algumas bibliotecas(dependências) na nossa aplicação o Postgress e o JPA.
     - Adicionar as duas dependências através do Spring Initializr, ir em Explore e copiar o código das dependências para o nosso arquivo "pom.xml"
   - Rodar a aplicar até aqui para ver se está tudo "ok".
-  - 15:15
+  - No PostgreSQL criar um BD com o nome "food"
+  - No projeto > src > main > resources > Duplo Clique (DC) em cima de "application.properties" e adicionar o código:
+    - spring.datasource.url=jdbc:postgresql://localhost:5432/food
+    - spring.datasource.username=username
+    - spring.datasource.password=password 
+  - Dentro do "FoodController" chamar a classe "Food" criar a classe apartir do erro apresentado e criar uma nova pasta "food"
+    - Dentro desta nova classe, vamos criar duas anotações:
+      - "@Table(name = "foods")"
+      - "@Entity(name = "foods")"
+    - Aqui adicionamos os campos da nossa tabela.
+  - Criamos dentro da pasta "food" uma interface "FoodRepository" que será uma extensão de "JpaRepository<Food, Long>"
+  - Até o momento estou com dificuldade em criar as tabelas de modo automático
+
+
 
 - Vídeo que segui para este estudo: [Aplicativo Fullstack Java Spring e React](https://www.youtube.com/watch?v=lUVureR5GqI)
 
