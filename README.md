@@ -43,6 +43,8 @@ Iniciar um projeto no site [Spring Initializr](https://start.spring.io/).
     - Aqui adicionamos os campos da nossa tabela.
   - Criamos dentro da pasta "food" uma interface "FoodRepository" que será uma extensão de "JpaRepository<Food, Long>"
   - Até o momento estou com dificuldade em criar as tabelas de modo automático
+  - Erro resolvido ao ao criar as tabelas, ao criar as directorias de forma automática o ficheiro main ficou a apontar mal, agora tenho o @AutoWired a funcionar
+  - 
 
 
 
