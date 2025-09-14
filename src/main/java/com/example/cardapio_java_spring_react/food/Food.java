@@ -1,10 +1,11 @@
-package com.example.food;
+package com.example.cardapio_java_spring_react.food;
 
 import jakarta.persistence.*;
 
 @Table(name = "foods")
 @Entity(name = "foods")
 public class Food {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,3 +13,4 @@ public class Food {
     private String image;
     private Integer price;
 }
+

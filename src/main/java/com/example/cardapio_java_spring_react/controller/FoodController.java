@@ -1,7 +1,6 @@
-package com.example.controller;
-
-import com.example.food.Food;
-import com.example.food.FoodRepository;
+package com.example.cardapio_java_spring_react.controller;
+import com.example.cardapio_java_spring_react.food.Food;
+import com.example.cardapio_java_spring_react.food.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
