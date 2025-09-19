@@ -44,10 +44,10 @@ Iniciar um projeto no site [Spring Initializr](https://start.spring.io/).
   - Criamos dentro da pasta "food" uma interface "FoodRepository" que será uma extensão de "JpaRepository<Food, Long>"
   - Até o momento estou com dificuldade em criar as tabelas de modo automático
   - Erro resolvido ao ao criar as tabelas, ao criar as directorias de forma automática o ficheiro main ficou a apontar mal, agora tenho o @AutoWired a funcionar
-  - Criamos um record (classe) "FoodResponseDTO" para retornar os dados de uma forma mais segura.
+  - Criamos uma classe (Record) "FoodResponseDTO" para retornar os dados de uma forma mais segura.
   - Uso de Boilerplate com o Lombok para os Getter e Construtores.
     - Estava a gerar erro ao chamar os Getters, optei por não usar o Lombok neste primeiro momento
-  - 
+  - Criado o a classe (Record) "FoodRequestDTO" para inserir dados via "post"
 
 
 

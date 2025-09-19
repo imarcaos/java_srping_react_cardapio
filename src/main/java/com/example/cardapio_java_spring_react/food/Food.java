@@ -25,6 +25,12 @@ public class Food {
         this.price = price;
     }
 
+    public Food(FoodRequestDTO data) {
+        this.title = data.title();
+        this.image = data.image();
+        this.price = data.price();
+    }
+
     public Long getId() {
         return id;
     }
